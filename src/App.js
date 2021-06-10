@@ -15,7 +15,7 @@ function App()
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path='/' exact component={PorductList} />
+          <Route path='/shoppingCart.com' exact component={PorductList} />
           <Route path='/productDetail/:productid' exact component={ProductDetails} />
           <Route path='/wishlist' exact component={Wishlist} />
           <Route path='/addCart' exact component={AddCart} />

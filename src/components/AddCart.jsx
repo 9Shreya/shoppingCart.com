@@ -86,7 +86,7 @@ const [close, setclose] = React.useState(false);
          {/* <AddCartDisplay/>  */}
    
             <div align='center' className='mb-4'>
-                <Link to='/' style={{textDecoration:'none' ,color:'white'}}>
+                <Link to='/shoppingCart.com' style={{textDecoration:'none' ,color:'white'}}>
                 <Button   style={{borderRadius:'3px',marginTop:'20px',backgroundColor:'#3f51b5',color:'white',width:'20%',height:'40px',fontWeight:'bolder'}}>
  Go to home
           </Button>

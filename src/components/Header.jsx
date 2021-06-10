@@ -207,7 +207,7 @@ export default function Header()
           >
             <MenuIcon />
                   </IconButton> */}
-                  <Link to='/' style={{textDecoration:'none' ,color:'white'}}>
+                  <Link to='/shoppingCart.com' style={{textDecoration:'none' ,color:'white'}}>
           <Typography  className={classes.title} variant="h5" style={{fontStyle:'italic',width:'130px'}} noWrap>
                           ShoppingCart
           </Typography>
