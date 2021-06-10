@@ -1,11 +1,11 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import WishlistDisplay from './WishlistDisplay';
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
-import { setWishlist } from '../redux/action/ActionType';
+// import { setWishlist } from '../redux/action/ActionType';
 
 function Alert(props) {
   return <MuiAlert elevation={1}  {...props} />;
@@ -37,7 +37,7 @@ function Wishlist()
     };
   let product = useSelector(state => state.productReducerIds.product)
       // const producddt = useSelector(state => state.productReducerIds)
-         const dispatch = useDispatch()
+        //  const dispatch = useDispatch()
 console.log(product);
   // console.log(product,Object.values(producddt));
   // if(product === undefined)

@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import {  useDispatch } from 'react-redux'
 import ProductComponent from './ProductComponent';
 import axios from 'axios'
-import  {setProducts,fetchApi} from '../redux/action/ActionType'
-import { useHistory } from 'react-router-dom';
+import  {setProducts} from '../redux/action/ActionType'
+// import { useHistory } from 'react-router-dom';
 import {connect} from 'react-redux'
 function PorductList(props)
 {

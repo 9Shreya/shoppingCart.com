@@ -3,7 +3,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import Tooltip from '@material-ui/core/Tooltip';
 import { useDispatch, useSelector } from 'react-redux';
-import { removeSelectedID,setAddCart, removeSelectedIDMain } from '../redux/action/ActionType';
+import {setAddCart, removeSelectedIDMain } from '../redux/action/ActionType';
 import axios from 'axios'
 function WishlistDisplay(data)
 {

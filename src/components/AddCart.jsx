@@ -5,9 +5,8 @@ import MuiAlert from '@material-ui/lab/Alert';
 // import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import SaveForLAter from './SaveForLAter';
-import { setWishlist, setAddCart } from '../redux/action/ActionType';
 function Alert(props) {
   return <MuiAlert elevation={1}  {...props} />;
 }
@@ -40,7 +39,7 @@ const [close, setclose] = React.useState(false);
     console.log(saveproduct);
     const product = useSelector(state => state.productReducerAddCart.product)
     // const producddt = useSelector(state => state.productReducerAddCart)
-             const dispatch = useDispatch()
+            //  const dispatch = useDispatch()
     // console.log(product,producddt);
 
 // if(product === undefined)
