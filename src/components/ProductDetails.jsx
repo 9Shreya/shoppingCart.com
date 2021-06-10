@@ -43,8 +43,7 @@ const data = await axios.get(`https://fakestoreapi.com/products/${id}`).catch((e
     let product;
      product = useSelector(state => state.selectedProduct)
     console.log(product);
- product = useSelector(state => state.selectedProduct.product)
-    console.log(product);
+
     
    
 
@@ -59,6 +58,8 @@ console.log(productid);
     console.log(product);
        
     dispatch(selectedProduct(response.data))
+    //  product = useSelector(state => state.selectedProduct.product)
+    // console.log(product);
   }
     const {title,description,image,price,category}=product;
 
