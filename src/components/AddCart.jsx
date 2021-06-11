@@ -69,7 +69,7 @@ const [close, setclose] = React.useState(false);
         )
 }):null
     return (
-        <div style={{ marginTop: '90px' }} className='container'>
+        <div style={{ marginTop: '90px' }} className='container containerGet'>
             
             <div className='wishlist' style={{padding:' 20px 20px 0 20px',maxHeight:'79vh',overflow:'auto',position:'relative'}}>
             <div className='container'>
@@ -102,13 +102,15 @@ const [close, setclose] = React.useState(false);
         <Alert onClose={addCartClose} severity="success">
           Saved for later!
         </Alert>
-                </Snackbar>
+          </Snackbar>
+          
                 { countProduct>0?
-                    <div className='buttondiv'>
+                  <div className='containerGet buttondiv ' style={{marginLeft: '0px'}}>   
                         <Button style={{
                             borderRadius: '3px',backgroundColor: '#ff3d00',color: 'white',width: '30%',height: '60px',float: 'right',fontWeight: 'bolder',fontSize: "15px"
                         }}> Place Order</Button>
-                    </div>:null}
+            </div>
+            : null}
             </div>
        
                      {saveproduct.length>0?<SaveForLAter/>:null}
