@@ -1,4 +1,4 @@
-import {  SET_PRODUCTS,REMOVE_SELECTED_ID_MAIN,Search_TERM,SELECTED_PRODUCT_SAVELATER,REMOVE_SELECTED_SAVELATER_PRODUCT,REMOVE_SELECTED_AddCart_PRODUCT,SELECTED_PRODUCT_AddCart ,SELECTED_PRODUCT,REMOVE_SELECTED_PRODUCT,SELECTED_PRODUCT_IDS} from "../constant/action-types";
+import {  THEME,SET_PRODUCTS,REMOVE_SELECTED_ID_MAIN,Search_TERM,SELECTED_PRODUCT_SAVELATER,REMOVE_SELECTED_SAVELATER_PRODUCT,REMOVE_SELECTED_AddCart_PRODUCT,SELECTED_PRODUCT_AddCart ,SELECTED_PRODUCT,REMOVE_SELECTED_PRODUCT,SELECTED_PRODUCT_IDS} from "../constant/action-types";
 
 const initialState = {
     product: []
@@ -120,6 +120,23 @@ export const productReducerSeacrh = (state=initialState,{type,payload}) =>
             {
                 console.log(state,payload);
                 return { ...state,product: payload }
+            }
+    
+        default:
+            {
+                console.log(state);
+                return state;
+            }
+    }
+}
+export const productTheme = (state=initialState,{type}) =>
+{
+    switch(type)
+    {
+        case THEME:
+            {
+                console.log(state);
+                return { theme:!state.theme }
             }
     
         default:

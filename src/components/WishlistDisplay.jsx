@@ -48,7 +48,7 @@ function WishlistDisplay(data)
 // title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"}
 
     return (
-        <div className='container' style={{marginTop:'10px'}}>
+        <div className='container' style={{marginTop:'10px',  marginBottom: '15px'}}>
             <div className='row'>
                 <div className='col-md-8 p-3 row m-auto wishlist' style={{position:'relative'}}>
                     <div className='col-md-3'>

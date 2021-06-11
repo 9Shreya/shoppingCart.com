@@ -75,11 +75,11 @@ console.log(productid);
            
         {Object.keys(product).length === 0 ? (
             <div>..Loading</div>):
-            (<div className='row boxColor m-auto' style={{height:'75vh'}}>
+            (<div className='row boxColor m-auto' >
                 <div className='col-md-6 ' 
-style={{justifyContent: 'center',alignItems: 'center',height:'50vh'}}>
+style={{justifyContent: 'center',alignItems: 'center'}}>
                         
-                        <SideBySideMagnifier className="detailImage col-md-12  " style={{width:'70%',margin: 'auto',marginBottom:'55px',paddingTop:'65px'}}
+                        <SideBySideMagnifier className="detailImage col-md-12  " style={{width:'60%',margin: 'auto',marginBottom:'55px',paddingTop:'65px'}}
   imageSrc={image}
   imageAlt="Example"
   largeImageSrc={image} // Optional

@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { productReducer,productReducerSeacrh,productReducerSaveForLater,productReducerAddCart,selectedProduct,productReducerIds } from './productreducer'
+import { productTheme,productReducer,productReducerSeacrh,productReducerSaveForLater,productReducerAddCart,selectedProduct,productReducerIds } from './productreducer'
 
 const reducers = combineReducers({
     productReducer: productReducer,
@@ -7,6 +7,7 @@ const reducers = combineReducers({
     productReducerIds:productReducerIds,
     productReducerAddCart: productReducerAddCart,
 productReducerSaveForLater:productReducerSaveForLater,
-productReducerSeacrh:productReducerSeacrh
+    productReducerSeacrh: productReducerSeacrh,
+productTheme:productTheme
 })
 export default reducers;

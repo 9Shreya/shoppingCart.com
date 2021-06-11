@@ -8,10 +8,13 @@ import ProductDetails from './components/ProductDetails';
 import PorductList from './components/PorductList';
 import Wishlist from './components/Wishlist';
 import AddCart from './components/AddCart';
+import { useSelector } from 'react-redux';
 function App()
 {
+      const theme = useSelector(state => state.productTheme.theme)
+
   return (
-    <div className="App ">
+    <div className={theme?'dark':'light'}>
       <BrowserRouter>
         <Header />
         <Switch>

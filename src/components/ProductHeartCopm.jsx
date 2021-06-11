@@ -73,7 +73,7 @@ if(product.val!==undefined){
 // console.log(product.val);
     return (
       
-          <div  className='card 'key={id} style={{margin:'auto',marginTop:'10px',marginBottom:'10px'}}>
+          <div  className='card containerGet'key={id} style={{margin:'auto',marginTop:'10px',marginBottom:'10px'}}>
             <Link  to={`/productDetail/${id}` } style={{ color: 'inherit', textDecoration: 'inherit',}}>
                
            <div style={{marginLeft:'9px',marginBottom:'9px' }} >

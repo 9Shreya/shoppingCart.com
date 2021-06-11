@@ -18,7 +18,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
-import { search } from '../redux/action/ActionType';
+import { search ,themeChange} from '../redux/action/ActionType';
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
@@ -85,6 +85,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header()
 {
+    const theme = useSelector(state => state.productTheme.theme)
+
   const wishlist = useSelector(state => state.productReducerIds.product)
   console.log(wishlist);
    const addCart = useSelector(state => state.productReducerAddCart.product)
@@ -167,7 +169,7 @@ export default function Header()
         </Link>
       <MenuItem>
         <IconButton aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent='day' color="secondary">
+          <Badge badgeContent={theme?'night':'day'} color="secondary">
                 <Brightness4Icon />
           </Badge>
         </IconButton>
@@ -253,8 +255,8 @@ export default function Header()
                </Link>           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <Tooltip title="Day/Night Theme" aria-label="add">
 
-             <IconButton aria-label="show 4 new mails" color="inherit" style={{marginTop:'8px'}}>
-              <Badge badgeContent='day' color="secondary">
+             <IconButton aria-label="show 4 new mails" color="inherit" style={{marginTop:'8px'}} onClick={()=>dispatch(themeChange())}>
+              <Badge badgeContent={theme?'night':'day'} color="secondary">
                 <Brightness4Icon /> &nbsp;<span style={{fontSize:'15px'}}>Theme</span> 
               </Badge>
                           </IconButton>

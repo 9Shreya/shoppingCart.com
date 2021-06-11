@@ -1,4 +1,4 @@
-import { SET_PRODUCTS,REMOVE_SELECTED_ID_MAIN,Search_TERM,SELECTED_PRODUCT_SAVELATER,REMOVE_SELECTED_SAVELATER_PRODUCT,REMOVE_SELECTED_ID,REMOVE_SELECTED_AddCart_PRODUCT,SELECTED_PRODUCT_AddCart,SELECTED_PRODUCT ,REMOVE_SELECTED_PRODUCT,SELECTED_PRODUCT_IDS} from '../constant/action-types'
+import { THEME,SET_PRODUCTS,REMOVE_SELECTED_ID_MAIN,Search_TERM,SELECTED_PRODUCT_SAVELATER,REMOVE_SELECTED_SAVELATER_PRODUCT,REMOVE_SELECTED_ID,REMOVE_SELECTED_AddCart_PRODUCT,SELECTED_PRODUCT_AddCart,SELECTED_PRODUCT ,REMOVE_SELECTED_PRODUCT,SELECTED_PRODUCT_IDS} from '../constant/action-types'
 import axios from 'axios';
 export const setProducts =(products)=> {
     return {
@@ -81,7 +81,12 @@ export const search = (product) =>
         payload:product
     }
 }
-
+export const themeChange = (product) =>
+{
+    return {
+        type: THEME,
+    }
+}
 export const fetchApi = () =>
 {
   return async (dispatch) =>
