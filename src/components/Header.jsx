@@ -167,7 +167,7 @@ export default function Header()
         <p style={{marginTop:'11px'}}>Cart</p>
         </MenuItem>
         </Link>
-      <MenuItem>
+      <MenuItem onClick={()=>dispatch(themeChange())}>
         <IconButton aria-label="show 4 new mails" color="inherit">
           <Badge badgeContent={theme?'night':'day'} color="secondary">
                 <Brightness4Icon />
