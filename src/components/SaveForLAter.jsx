@@ -58,8 +58,8 @@ const [close, setclose] = React.useState(false);
         // <div style={{ marginTop: '90px' }} className='container'>
             
         //     <div className='wishlist' style={{padding:' 20px 20px 0 20px',maxHeight:'79vh',overflow:'auto',position:'relative'}}>
-         <div className='wishlist ' style={{padding:'20px',marginTop:'20px'}}>
-             <div className='container'>  
+         <div className='wishlist containerGet' style={{padding:'20px',marginTop:'20px',marginLeft:'auto',marginBottom: '20px'}}>
+             <div className=' container'>  
          <div className='container '>
                 <div className='row'>
                     <div className='col-md-8 m-auto wishlistMain'>

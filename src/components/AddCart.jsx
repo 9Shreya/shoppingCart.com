@@ -69,9 +69,9 @@ const [close, setclose] = React.useState(false);
         )
 }):null
     return (
-        <div style={{ marginTop: '90px' }} className='container containerGet'>
+        <div  className='container ' style={{ marginTop: '90px',marginLeft:'auto' }}>
             
-            <div className='wishlist' style={{padding:' 20px 20px 0 20px',maxHeight:'79vh',overflow:'auto',position:'relative'}}>
+            <div className='wishlist containerGet' style={{padding:' 20px 20px 0 20px',maxHeight:'79vh',overflowX:'hidden',position:'relative',marginLeft:'auto'}}>
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-8 m-auto wishlistMain'>
@@ -105,7 +105,7 @@ const [close, setclose] = React.useState(false);
           </Snackbar>
           
                 { countProduct>0?
-                  <div className='containerGet buttondiv ' style={{marginLeft: '0px'}}>   
+                  <div className='containerGet buttondiv ' style={{marginLeft: '-8%'}}>   
                         <Button style={{
                             borderRadius: '3px',backgroundColor: '#ff3d00',color: 'white',width: '30%',height: '60px',float: 'right',fontWeight: 'bolder',fontSize: "15px"
                         }}> Place Order</Button>

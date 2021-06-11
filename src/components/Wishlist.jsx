@@ -83,8 +83,8 @@ const searchdata = useSelector(state => state.productReducerSeacrh.product)
 })
   }
     return (
-        <div style={{ marginTop: '100px' }}>
-                   <div className='container'>
+        <div className='containerGet container'  style={{ marginTop: '100px',marginLeft:'auto' }}>
+                   <div className=' container'>
                 <div className='row'>
                     <div className='col-md-8 m-auto wishlistMain'>
                      <p style={{padding: '10px 20px',

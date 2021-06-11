@@ -45,7 +45,7 @@ box-shadow: 0px 1px 1px 5px rgba(224, 223, 223, 0.19),0 6px 6px rgba(112, 109, 1
  
  .buttondiv{
     position: sticky;
-   
+   width: 111%;
     bottom: 0;
     background-color: transparent;
     justify-items: right;
@@ -73,7 +73,4 @@ background-image: linear-gradient(to right top, #d5ecd5, #d0d6c7,  #e0beb8, #c3c
       backdrop-filter: blur(40px)!important;
       border-radius: 10px;
       box-shadow:1px 5px 10px rgba(46,56,68,0.5)!important;  
-}
-.buttondivChna {
-  
 }
