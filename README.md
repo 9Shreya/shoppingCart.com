@@ -1,3 +1,8 @@
+
+### Live Demo
+
+https://9shreya.github.io/shoppingCart.com/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -71,6 +76,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-### Live Demo
 
-https://9shreya.github.io/shoppingCart.com/
