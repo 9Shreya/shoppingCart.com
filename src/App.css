@@ -62,7 +62,7 @@ background-image: linear-gradient(to right top, #bdc4bd, #696c64,  #947771, #5d5
   height: 100vh;
   overflow: scroll;
   color: black;
-background-image: linear-gradient(to right top, #d5ecd5, #d0d6c7,  #e0beb8, #c3c3ec, #ebd5eb, #e9e1f1, #a0b4ff);
+/* background-image: linear-gradient(to right top, #d5ecd5, #d0d6c7,  #e0beb8, #c3c3ec, #ebd5eb, #e9e1f1, #a0b4ff); */
 }
  .containerGet{
     padding: 15px;
